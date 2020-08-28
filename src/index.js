@@ -2,17 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
-import GlobalStyles from "./Theme/globalStyles";
-import { ThemeProvider } from "styled-components";
-import Theme from "./Theme/theme";
 import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
   <React.StrictMode>
-    <ThemeProvider theme={Theme}>
-      <GlobalStyles />
-      <App />
-    </ThemeProvider>
+    <App />
   </React.StrictMode>,
   document.getElementById("root")
 );
